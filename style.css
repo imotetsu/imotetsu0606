@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+}
+
+header {
+  background: url(sweet-potato-1615024_960_720.jpg);
+  background-size: cover;
+  padding: 12px;
+  /* margin: 0; */
+}
+
+.title h1 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 32px;
+  color: aquamarine;
+}
+
+Nav {
+  background: purple;
+  width: 100%;
+  /* position: fixed; */
+  /* top: 0; */
+}
+
+.Nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.navItem {
+  border-left: 1px solid #999;
+  text-align: center;
+  flex: 0 1 22%;
+}
+
+.navItem:last-of-type {
+  border-right: 1px solid #999;
+}
+
+h2 {
+  text-decoration: underline solid purple;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: background-color 5s;
+}
+
+a:hover {
+  /* background-color: wheat; */
+  color: black;
+}
+
+section {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.hobby ,ul {
+  display: inline-block;
+  border: 1px solid plum;
+  margin: 10px;
+  padding: 30px;
+}
+
+form {
+  background: #ddd;
+  margin: 10px;
+  padding: 20px;
+}
+
+dl {
+  margin: 0;
+  font-size: 16px;
+}
+
+.formItem {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: center;
+}
+
+dt {
+  flex: 1 1 30px;
+  text-align: right;
+  margin-right: 1em;
+  font-weight: bold;
+  color: #00a;
+}
+
+dd {
+  flex: 2 1 30px;
+  margin-left: 0;
+}
+
+input[type="text"], textarea {
+  border: 2px solid gray;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.job {
+  margin-right: .8em;
+}
+
+select {
+  background: #fff;
+  width: 100%;
+  height: 32px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 5em;
+}
+
+.btn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  background: #00a;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer {
+  background: purple;
+  color: white;
+  padding: 64px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 768px) { 
+  .formItem {
+    display: block;
+  }
+  dt {
+    text-align: left;
+    margin-bottom: 4px;
+  }
+  dd {
+    margin-left: 0;
+    }
+  .job {
+    margin-right: .8em;
+  }
+}

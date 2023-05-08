@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio site</title>
+</head>
+<body>
+  <header class="title">
+    <h1>imotetsu</h1>
+  </header>
+  <main>
+    <nav class="Nav">
+      <ul>
+        <li class="navItem"><a href="#profile">プロフィール</a></li>
+        <li class="navItem"><a href="#skill">スキル</a></li>
+        <li class="navItem"><a href="#hobby">趣味</a></li>
+        <li class="navItem"><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    
+    <section id="profile">
+      <div>
+        <h2>プロフィール</h2>
+      </div>
+      <div class="ai">
+        <img src="IMG_2935.JPG" width="200px" height="200px">
+        <p>福岡県八女市在住で、妻・娘(１歳)と3人暮らし。<br>介護施設の管理者として働くも、多忙で家族とゆっくり過ごす時間が取れず退職を決意する。<br>現在は障碍者施設で介護福祉士として働く。<br>フリーランスを目指し、WEBデザイナーとしても活動する。</p>
+      </div> 
+    </section>
+    <section id="skill">
+      <div>
+        <h2>スキル</h2>
+        <p>HTML/CSS</p>
+        <p>HTMLとCSSを独学で学ぶ。現在はJavaScriptを勉強中。      
+      </div>
+    </section>
+    <section id="hobby">
+      <div>
+        <h2>趣味</h2>
+        <ul>
+          <li>野球観戦</li>
+          <li>YouTube視聴</li>
+          <li>読書</li>
+          <li>ゲーム</li>
+          <li>食べ歩き</li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <div>
+        <h2>お問い合わせ</h2>
+      </div>
+      <form>
+        <dl>
+          <div class="formItem">
+            <dt>お名前</dt>
+            <dd><input type="text" name="userName"></dd>
+          </div>
+          <div class="formItem">
+            <dt>職業</dt>
+            <dd>
+              <label class="job"><input type="radio" name="job" value="学生">学生</label>
+              <label class="job"><input type="radio" name="job" value="会社員">会社員</label><label class="job"><input type="radio" name="job" value="その他">その他</label>
+            </dd>
+          </div>
+          <div class="formItem">
+            <dt>お問い合わせ種別</dt>
+            <dd>
+              <select name="messageType">
+                <option value="選択してください">選択してください</option>
+                <option value="選択肢1">選択肢1</option>
+                <option value="選択肢2">選択肢2</option>
+              </select>
+            </dd>
+          </div>
+          <div class="formItem">
+            <dt>お問い合わせ内容</dt>
+            <dd><textarea name="message"></textarea></dd>
+          </div>
+          <div class="btn"><input type="submit" value="送信する"></div>
+        </dl>
+      </form>
+    </section>
+    </main>
+    <footer>
+      <small>&copy; imotetsu.com</small>
+    </footer>
+    </body>
+    </html>
